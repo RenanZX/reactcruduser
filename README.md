@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# CRUD simples React app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplicação web simples de CRUD usando react
 
-## Available Scripts
+## Instruções de Instalação e configuracao
 
-In the project directory, you can run:
+Primeiramente é necessário fazer a instalação das aplicações necessarias:
 
-### `npm start`
+* [Node.js](https://nodejs.org/en/)
+* [Postgresql](https://www.postgresql.org/download/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Após isso vá até a raiz do projeto, e digite o comando ```npm run install-all```, este comando
+irá instalar todas as dependências necessárias para a aplicação funcionar.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Configurando banco de dados
 
-### `npm test`
+Entre no terminal do postgres, e digite o comando:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- ```create database "crud_test"```
 
-### `npm run build`
+Isso criará o nosso banco de dados, agora se conecte com ele usando o comando ```\c crud_test``` e rode
+o arquivo sql presente no projeto usando o comando ```\i sgbd-config/manager-db.sql```.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Instruções para execução
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Digite o comando ```npm run dev``` e pronto, será aberto uma nova página web e a aplicação estará funcionando.
